@@ -23,11 +23,11 @@ public class Book {
         this.name = name;
     }
 
-    public String getCategory() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 
@@ -43,6 +43,6 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String name;
-    String category;
+    Category category;
     Status status;
 }
